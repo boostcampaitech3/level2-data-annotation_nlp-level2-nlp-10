@@ -1,0 +1,6 @@
+줄리아(Julia)는 고성능의 수치 해석 및 계산과학의 필요사항을 만족시키면서 일반 목적 프로그래밍에도 효과적으로 사용될 수 있도록 설계된 고급 동적 프로그래밍 언어이다.
+줄리아 공식 배포판은 줄리아의 REPL 통신 세션 셸을 포함하고 있으며, 테스트 코드를 빠르게 실험하기 위해 사용할 수 있다.
+다음 부분은 샘플 세션 예제의 하나로서, 문자열들은 printLn에 의해 자동으로 이어붙여진다.
+julia&gt; p(x) = 2x^2 + 1; f(x, y) = 1 + 2p(x)y
+julia&gt; println("Hello world!", " I'm on cloud ", f(0, 4), " as Julia supports recognizable syntax!")
+Hello world! I'm on cloud 9 as Julia supports recognizable syntax!

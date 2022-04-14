@@ -1,0 +1,33 @@
+알골(ALGOL, Algorithmic Language의 준말)은 1950년대 미국에서 만들어진 포트란에 대항하여 유럽의 학자들을 중심으로 개발된 프로그래밍 언어이다.
+알고리즘의 연구개발, 수치 계산과 논리 연산에 이용하기 위한 목적으로 만들어졌다.
+ALGOL은 여러 ALGOL계 언어의 총칭으로 ALGOL이란 이름의 프로그래밍 언어는 존재하지 않는다.
+1958년 취리히에서 열린 국제회의에서 제안된 것이 그 기원으로 여겨진다. (이 언어는 후에 ALGOL 58로 불리게 되지만, 당초의 이름은 IAL이었다.)
+1960년에 제안된 ALGOL 60 은 그 문법이 BNF 표기법으로 기술되었으며 구조화된 프로그래밍의 형태를 갖고 있었다.
+ALGOL 60은 절차형 언어로는 최초로 재귀호출이 가능한 프로그래밍 언어였다.
+또한 PL/I, 파스칼, C 언어 등 이후 언어의 발전에 큰 영향을 주었다.
+그러나 현재는 거의 이용되지 않고 있다.
+인자 전달에 있어서 알골에 특징적이었던 "이름 전달" 방식도 이후의 언어에서는 거의 찾아볼 수 없게 되었다.
+표준으로 IFIP TC/WG2.1에서 ALGOL 60이 제정되었다.
+이후에는 이어지는 표준화 작업은 진행되지 않고 1984년에야 ALGOL 60에 상당하는 것이 ISO 표준으로 지정되었다.
+1968년에는 ALGOL 68이 개발되었다.
+ALGOL 68에서는 2단계 문법 Wijngaarden 표기법으로 문법이 기술되었다.
+ALGOL 60의 후계 언어가 제정되기까지 파스칼을 설계한 Wirth의 ALGOL W를 비롯한 여러 후보자가 있었지만, 결국은 ALGOL 68이 후계로 지정되었다.
+그러나 너무 복잡하고 방대한 사양을 요구했기 때문에 ALGOL 68 컴파일러는 실제 구현이 어려웠고, Wijngaarden 표기법 또한 난해하여 실용적으로 보급되지 못했다.
+다음은 n×m의 2 차원 배열 중 절대값이 가장 큰 요소를 찾아, 그 절대 값을 y에, 첨자를 i와 k에 저장하는 함수이다.
+PROCEDURE Absmax(a) Size:(n, m) Result:(y) Subscripts:(i, k) ;
+VALUE n, m ; ARRAY a ; INTEGER n, m, i, k ; REAL y ;
+COMMENT The absolute greatest element of the matrix a, of size n by m
+is transferred to y, and the subscripts of this element to i and k ;
+y := 0 ; i := k := 1 ;
+FOR p := 1 STEP 1 UNIT n DO
+FOR q := 1 STEP 1 UNTIL m DO
+IF abs (a[p, q]) &gt; y THEN
+y := abs (a[p, q]) ;
+PROC ABS max = ([,]real a, REF real y, REF int i, k)real:
+COMMENT The absolute greatest element of the matrix a, of size ⌈a by 2⌈a
+is transferred to y, and the subscripts of this element to i and k; COMMENT
+real y := 0; i := ⌊a; k := 2⌊a;
+FOR p FROM ⌊a TO ⌈a DO
+FOR q FROM 2⌊a TO 2⌈a DO
+IF ABS a[p, q] &gt; y THEN
+y := ABS a[p, q];

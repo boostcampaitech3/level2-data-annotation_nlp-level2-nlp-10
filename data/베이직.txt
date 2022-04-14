@@ -1,0 +1,32 @@
+초심자용 다목적 기호명령부호(初心者用 多目的 記號命令符號，Beginner's All-purpose Symbolic Instruction Code), 약자 베이직(BASIC, )은 프로그래밍 언어의 하나이다.
+절차형 언어로 1964년 다트머스 대학교의 존 케메니(John Kemeny)와 토머스 커츠(Thomas Kurtz)가 개발했다.
+교육용으로 개발되어 언어의 문법이 쉬우며, 다트머스의 최초 제품 이래로 인터프리터 방식이 많았으나 최근에는 컴파일러 방식도 많다.
+현재는 다양한 종류의 베이직이 존재하며 서로 문법도 많이 차이가 난다.
+서로 다른 종류 사이의 소스 코드는 호환되지 않는다.
+아래 예는 모든 ANSI/ISO 호환 베이직과 1970년대에서 1980년대에 마이크로 컴퓨터에 설치된 대부분의 베이직에서 동작한다.
+10 PRINT "Hello, world!"
+이러한 기종에 설치된 베이직은 줄번호가 생략된 즉각 모드로 실행할 수도 있다.
+다음 예를 실행할 때에는 RUN 명령어가 필요없다.
+PRINT "Hello, world!"
+? "Hello, world!"
+이후의 베이직은 구조화 프로그래밍을 지원하며 코드에서 줄번호가 사라졌다.
+다음 예는 현대적인 베이직의 거의 대부분에서 RUN 명령으로 실행할 수 있다.
+PRINT "Hello, world!"
+많은 베이직에서 End 선언문은 빼도 된다.
+사용자 입력 개수 만큼 별 출력.
+Visual Basic .NET.
+Dim UserName, Answer, stars As String ' UserName$, Answer$, stars$ may be used as well.
+Dim NumStars, I As Integer
+Console.Write("What is your name: ")
+UserName = Console.ReadLine()
+Console.WriteLine("Hello {0}", UserName)
+Console.Write("How many stars do you want: ")
+NumStars = CInt(Console.ReadLine())
+stars = New String("*", NumStars)
+Console.WriteLine(stars)
+Console.Write("Do you want more stars? ")
+Answer = Console.ReadLine()
+Loop Until Answer &lt;&gt; ""
+Answer = Answer.Substring(0, 1)
+Loop While Answer.ToUpper() = "Y"
+Console.WriteLine("Goodbye {0}", UserName)

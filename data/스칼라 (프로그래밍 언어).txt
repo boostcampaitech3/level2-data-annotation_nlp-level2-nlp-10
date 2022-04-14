@@ -1,0 +1,74 @@
+스칼라()는 객체 지향 프로그래밍 언어와 함수형 프로그래밍의 요소가 결합된 다중패러다임 프로그래밍 언어이다. "스칼라"라는 이름은 "Scalable Language (확장 가능한 언어)"에서 유래된 것이다.
+기존의 Java 언어가 너무 복잡하다는 단점을 극복하기 위해 2004년 Martin Odersky가 처음 개발하여 배포했다.
+간결한 소스 코드를 사용하여 Java에서 구현할 수 있는 대부분의 기능을 구현할 수 있다.
+Scala는 자바 바이트코드를 사용하기 때문에 자바 가상 머신(JVM)에서 실행할 수 있고, Java 언어와 호환되어 대부분의 자바 API를 그대로 사용할 수 있다.
+스칼라는 다른 언어로 표현할 수 있는 패턴을 매우 간결하게 표현할 수 있는 범용 프로그래밍 언어이다.
+객체 지향 프로그래밍 언어와 함수형 프로그래밍의 요소의 결합과 자바 API의 적용을 통해 프로그래머의 생산성을 높이는데 도움을 준다.
+그 예로 같은 기능을 하는 프로그램을 작성했을 때 자바로 작성했을 때에 비해 2-3배의 코드 길이가 줄어든다.
+자바 런타임 환경(런타임 환경 (JRE))과의 상호 호환성이 좋으며, .NET을 위한 지원도 제공하고 있다.
+스칼라는 많은 언어로부터 프로그래밍의 다양한 개념을 차용하여 쓰고있다.
+대부분의 스칼라 관련 문서들에서 스칼라와 자바의 연관성을 '너무 바빠서 다른 언어를 따로 배울 시간이 없는 자바 프로그래머를 위한'이라는 표현을 사용하여 나타낼 정도로 비슷한 부분이 많이 나타난다.
+import 키워드를 통해 사용할 패키지의 선언을 한다.
+이 때 _(밑줄, underscore)을 사용함을 통해 패키지나 객체의 멤버에 대해 접근성을 향상시킬 수 있다.
+import java.util.Scanner
+import scala.collection.mutable._
+스칼라에서는 자바 API도 사용할 수 있다.
+다음은 java.util.Scanner를 통해 문자열 입력을 받아 출력하는 예제이다.
+import java.util._
+object Example1 {
+val s = new Scanner(System.in)
+def main(args: Array[String]): Unit = {
+println("Your input: " + s.nextLine)
+스칼라 고유의 라이브러리 파일을 추가로 가지고 있으면 기존의 자바 가상 머신에서 그대로 실행할 수 있다.
+다음은 리눅스에서 자바 실행기(CUI환경)를 통해 스칼라로 컴파일한 프로그램을 실행하는 예이다.(bin에 클래스 파일들이, lib에 스칼라 라이브러리 파일들이 있다고 가정한다.)
+java -cp .:./bin:./lib/* Example1
+자바에서의 자료형은 기본 자료형(int, short, long, float, double, byte, char, boolean)과 참조 자료형(기본 자료형의 조합으로 생성한 클래스)으로 나뉜다.
+이는 성능에는 도움이 될 지 몰라도 기본 자료형과 참조 자료형 간의 변환 문제로 언어의 표현이 복잡해지는 경향이 있다.
+이에 반해 스칼라에서는 스몰토크나 루비와 같이 모든 자료형을 객체로 취급하고 있다.
+그 예로 3 + 4 와 같은 수식은 정수 3의 메소드 +를 4라는 정수 인자값으로 호출한다고 표현하여 (3).+(4) 와 같이 표현할 수 있다.
+스칼라의 모든 객체는 scala 패키지의 Any를 최상위 클래스로 값(AnyVal)과 레퍼런스(AnyRef)를 모두 아우르고 있다.
+자바에서는 생성자를 private를 통해 선언함과 메소드를 static으로 선언함을 통해 싱글턴 객체를 생성한다.
+이렇게 생성된 객체는 생성자가 private으로 선언되어있기 때문에 새로 객체를 생성할 수 없고 static 메소드를 통해 어디서나 접근하는 것이 가능하다. 하지만 static은 객체지향이 지향하는 바에 부합하지도 않을 뿐 더러 객체를 프로그램 실행 초기에 미리 생성해두어야 하기 때문에 자원의 낭비 가능성이 존재하게 된다.
+이를 스칼라에서는 object라는 키워드를 통해 선언한다.
+내부동작에는 크게 차이가 없으나 코드 표현에 있어서 간결성을 보인다.
+Hello, world 프로그램.
+object HelloWorld {
+def main(args: Array[String]): Unit = {
+println("Hello, world!")
+Hello, world 프로그램 2.
+object HelloWorld extends App {
+println "Hello, world!"
+Quick Sort 프로그램.
+명령형 프로그래밍 방식으로 구현한 경우 ▼
+def qsort(arr: Array[Int]): Array[Int] = {
+def swap(i: Int, j: Int): Unit = {
+val tmp = arr(i)
+def partition(left: Int, right: Int): Unit =
+if (right &lt;= left ) ()
+val pivot = arr((left + right) / 2)
+while (i &lt;= j) {
+while (arr(i) &lt; pivot) i += 1
+while (arr(j) &gt; pivot) j -= 1
+if (i &lt;= j) {
+if (left &lt; j) partition(left, j)
+if (j &lt; right) partition(i, right)
+partition(0, arr.length - 1)
+if-else문을 사용한 경우 ▼
+def qsort(seq: Seq[Int]): Seq[Int] =
+if (seq.isEmpty) seq
+val (pivot, rest) = (seq.head, seq.tail)
+qsort(lt) ++ (pivot +: qsort(ge))
+def qsort(seq: Seq[Int]): Seq[Int] = seq match {
+case pivot +: rest =&gt;
+qsort(lt) ++ (pivot +: qsort(ge))
+def qsort[T](seq: Seq[T], lessThan: (T, T) =&gt; Boolean): Seq[T] = seq match {
+case pivot +: rest =&gt;
+qsort(lt, lessThan) ++ (pivot +: qsort(ge, lessThan))
+뷰 바운드(View Bounds)을 활용한 경우 ▼
+def qsort[T &lt;% Ordered[T]](seq: Seq[T]): Seq[T] = seq match {
+case pivot +: rest =&gt;
+qsort(lt) ++ (pivot +: qsort(ge))
+컨텍스트 바운드(Context Bounds)을 활용한 경우 ▼
+def qsort[T: Ordering](seq: Seq[T]): Seq[T] = seq match {
+case pivot +: rest =&gt;
+qsort(lt) ++ (pivot +: qsort(ge))

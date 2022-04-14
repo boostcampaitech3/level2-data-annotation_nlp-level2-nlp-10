@@ -1,0 +1,88 @@
+C#( 또는 C 샵)는 마이크로소프트에서 개발한 객체 지향 프로그래밍 언어로, 닷넷 프레임워크의 한 부분으로 만들어졌으며 나중에 ECMA (ECMA-334)와 ISO (ISO/IEC/23270)의 표준으로 자리잡았다.
+C++와 자바의 문법과 비슷한 문법을 가지고 있다.
+헬로 월드 프로그램(Hello, world!).
+using System; //System이라는 모듈을 사용한다.
+해당 모듈은 Console에 관한것들을 담고있다
+namespace HelloWorld
+자바의 클래스와 같다고 생각하면 된다.
+private static void Main()
+{ //private이라는 구문으로 클래스 내부에서만 가능하게 만든다. static void Main()이라는 구문으로 메인 메소드를 만든다.
+이것은 Java 와 다르고 C 와 C++ 처럼 (string[] args) 가 붙지 않으며 보통 빈칸이다.
+Console.WriteLine("Hello, World!"); //콘솔에 하얀색 글씨로 Hello World 라고 출력한다.
+Console.ReadLine(); //그냥 WriteLine 이라고 쓰면 바로 프로그램이 종료된다.
+ReadLine으로 아무키나 눌러야 종료되도록 한다.
+} //메인메소드의 끝. 메소드의 끝이라고 할 수 있다.
+} //클래스의 끝. 클래스밑에 다른 클래스를 만들수 없다
+} //네임스페이스의 끝. 폴더의 끝이라고 생각하면 된다
+System.Console.WriteLine("Hello, World!");
+//System 구문으로 System 을 사용한다는 정의와 동시에 namespace 없이 작동시킨다
+//Console 구문으로 콘솔을 출력한다
+//WriteLine으로 하얀색 글을 콘솔에 붙인다.
+C#은 닷넷 프로그램이 동작하는 닷넷 플랫폼을 가장 직접적으로 반영하고, 또한 닷넷 플랫폼에 강하게 의존하는 프로그래밍 언어이다.
+C#은 그 문법적인 특성이 자바와 상당히 유사하며 C#을 통하여 다룰 수 있는 닷넷 플랫폼의 기술들조차도 자바를 염두에 둔 것이 많아서 자바와 가장 많이 비교되고 있다. 하지만 C#은 자바와 달리 불안전 코드(unsafe code)와 같은 기술을 통하여 플랫폼 간 상호 운용성에 상당히 많은 노력을 기울이고 있다.
+C#의 기본 자료형은 닷넷의 객체 모델을 따르고 있고, 런타임 차원에서 쓰레기 수집(garbage collection)이 되며 또한 클래스, 인터페이스, 위임, 예외와 같이 객체 지향 언어로서 가져야 할 모든 요소들이 포함되어 있다.
+닷넷 프레임워크를 개발하던 시절 클래스 라이브러리는 SMC(Simple Managed C)라 불리는 관리 코드(managed code)를 사용했었다.
+1999년 1월, 아네르스 하일스베르가 이끄는 팀이 새로운 언어인 Cool(C-like Object Oriented Language)을 개발했다.
+마이크로소프트는 언어의 최종 이름을 Cool로 유지할지도 고려해봤지만 상표 문제로 인해 이뤄지지 않았다.
+2000년 7월 PDC에서 닷넷 프로젝트가 발표될 때 즈음 Cool의 이름은 C#으로 정해졌고 클래스 라이브러리와 ASP.NET 런타임은 C#으로 옮겨갔다.
+C#은 ISO 소위원회 JTC 1/SC 22에 ISO/IEC 23270:2003으로 제출되었으나 철회 후 ISO/IEC 23270:2006으로 등록되었다.
+C#이라는 이름은 음표를 연주할 때 반음 올리는 것을 표시하는 올림표에서 따왔다.
+C++에서 "++"가 변수의 값을 1 증가시키는 것을 의미하는 것과 비슷하다.
+마찬가지로 올림표는 네 개의 "+" 기호와 비슷하므로 C++를 한번 더 증가시켰다는 뜻도 지닌다.
+기본 글꼴이나 브라우저의 기술적인 한계와 더불어 키보드에는 올림표 기호()가 포함되지 않기에 문서에서는 대체 기호로 해시 기호()를 사용하며, ECMA-334 C# 언어 사양
+그러나 광고나 패키지 포장 등 가능한 경우, 마이크로소프트에서는 의도한 대로 올림표를 사용한다.
+C#의 기본 문법은 C, C++, 자바 등 C 스타일 언어와 유사하다.
+C++ 언어와 비교할 때 C#은 다음과 같은 점에서 단순화되거나 확장되었다.
+(codice_13 메서드로 codice_14 형식을 가져올 수 있음)도 지원한다.
+C++에서 포인터는 특정한 형식의 인스턴스 또는 주소값을 가리키기 위한 목적으로 할당되는 주소값을 기억하기 위한 변수로 취급되지만
+C#의 포인터는 codice_11이라는 하나의 완성된 형식에 대한 확장 사양일 뿐이다.
+그래서 C++의 포인터와 같은 쓰임새를 C#으로 이식할 수 없는 경우가 상당히 많다.
+모든 코드 범위에서 엄격한 산술 연산 검사를 할 수 있으며 codice_19 로 지정된 경우
+모든 코드 범위에서 산술 연산 검사를 하지 않도록 할 수 있다.
+컴파일러 옵션과는 관계없이 unchecked 블록 안에서는 검사되지 않으며,
+반대로 checked 블록 안에서는 검사가 이루어진다.
+a = int.MaxValue + 20;
+a = int.MaxValue * 2;
+namespace FooBar
+private int Test = 123;
+static void Main(string[] args)
+Program p = new Program();
+fixed (int* ptrX = &amp;p.Test)
+Console.Out.Write(Convert.ToString(*ptrX));
+Console.Out.WriteLine(Convert.ToString(*ptrX));
+int[] a = new int[5];
+public string Name
+m_name = "Name :: "+value;
+public void MethodOne(string name)
+this.Name = "DotNet";
+C#에서 리플렉션으로 확장하여 사용하는 것이 가능하다.
+리플렉션은 자바 언어의 리플렉션과 같은 개념이다.
+즉, C/C++에서 사용되던 #include나 #pragma와 같은 지시자를 C#에서는 사용할 수 없으며,
+C/C++에서 매크로 상수나 매크로 함수 등을 위해 사용되던 #define이 C#에서는 매우 제한적인 용도로 사용된다.
+또한 C/C++에는 없던 #region, #endregion 지시자가 새로 추가되었다.
+public class FooClass
+private int integer;
+private string debugmsg;
+public string DebugMsg
+return this.debugmsg;
+this.debugmsg = value.Clone() as string;
+즉, 모든 인스턴스나 메서드는 반드시 특정 클래스의 멤버로 소속되어야 한다.
+대신 C# 3.0부터 이와 비슷한 확장 메서드를 지원하고 있다.
+확장 메서드는 정적 클래스의 멤버로 있어야 하며 이 때에도 대상 클래스의 private 멤버에는 접근 할 수 없다.
+public class Foo
+[MarshalAs(UnmanagedType.U4)]
+private uint dwValue;
+[MarshalAs(UnmanagedType.LPWstr)]
+private string lpcwValue;
+public uint DWValue
+public string LPCWValue
+public static class Bar
+public static string FooString(this Foo foo)
+return string.Format("정수 값은 {0}, 문자열 값은 {1}입니다.", foo.DWValue, foo.LPCWValue);
+아래 예제는 정수형으로 이루어진 배열에서 100을 초과하는 값만을 추출하는 코드이다.
+public List&lt;int&gt; linqtest(List&lt;int&gt; list)
+var result = from k in list where k &gt; 100 select k;
+public static void Print(int a, int b, Func&lt;int&gt; func)
+Console.WriteLine("{0} 더하기 {1}은 {2}입니다.", a, b, func(a, b));
+public static void Main()
+Print(a, b, f =&gt; {Console.WriteLine("func가 호출되었습니다."); return a+b;});

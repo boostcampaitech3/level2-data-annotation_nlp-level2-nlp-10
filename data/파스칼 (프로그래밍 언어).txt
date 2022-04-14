@@ -1,0 +1,64 @@
+파스칼(Pascal)은 1969년에 스위스 ETH 취리히의 컴퓨터 과학자 니클라우스 비르트가 개발한 프로그래밍 언어로, 당대의 가장 인기있는 교육용 언어 중 하나였으며, 1980년대와 1990년대 초반에 걸쳐 널리 사용되었다.
+파스칼은 발표 당시에는 아주 기본적인 컴퓨터 언어의 요소만을 가지고 있었으므로 시스템을 직접 다루기에는 부족하였다.
+파스칼이라는 이름은 프랑스의 수학자이자 철학자 블레즈 파스칼의 이름을 딴 것이다.
+포인터를 사용한 구조적 프로그래밍과 데이터 구조화(data structuring)를 그 특징으로 한다.
+과학연구를 목적으로 만들어진 고급언어인 알골 60의 영향을 받은 까닭에, 같은 시기에 마찬가지 영향을 받아 제작된 C와 여러가지 면에서 유사한 점을 갖는다.
+그러나 코드를 간결하게 하고 버그를 더 쉽게 잡아내기 위한 목적으로 몇가지 기능을 제한함으로써 결과적으로 C 언어에 비해 활용도가 떨어지는 언어가 되었다.
+그러나 완전히 비실용적인 언어라는 뜻은 아니며, 실제로 TeX나 초기 매킨토시 운영 체제 제작에 사용되기도 하였다.
+최근에는 파스칼 컴파일러 자체가 크게 개선되고 소프트웨어 개발 기술의 발전으로 이런 사소한 차이점은 거의 무시할 수 있는 단점이 되었다.
+어셈블리를 직접 사용하기도 한다.
+현재는 초기의 파스칼에 비해 많은 부분이 추가, 개선되고 다른언어의 장점들을 따와 상용 파스칼 컴파일러인 델파이는 C++과 거의 기능 차이가 없다.
+많은 변종들이 존재하며, 객체 지향 프로그래밍을 위해 기능을 추가한 변종들도 다수 존재한다.
+엠바카데로 사의 델파이와 카일릭스는 파스칼의 직계 후손이라 할 수 있는 오브젝트 파스칼을 사용한다.
+델파이 7 버전부터는 델파이라는 말을 사용하기도 한다.
+오픈 소스로 제작된 프리 파스칼이나 GNU 파스칼도 있다.
+델파이 언어로 불리는 변종 오브젝트 파스칼은 델파이, 프리 파스칼 IDE, 라자루스 등에서 개발할 수 있다.
+볼랜드 파스칼이라 불리는 델파이 이전의 오브젝트 파스칼은 터보 파스칼, 프리 파스칼 IDE에서 개발할 수 있다.
+program HelloWorld(output);
+writeln('Hello, World!')
+program WriteName;
+Write('Please give your name: ');
+WriteLn('Hello ', Name);
+e: (apple, pear, banana, orange, lemon);
+일반 유형의 하부 범위는 다음과 같이 짤 수 있다:
+fruit=(apple, pear, banana, orange, lemon);
+z: pear..orange;
+다른 프로그래밍 언어와 달리, 파스칼은 집합 유형을 지원한다:
+set1: set of 1..10;
+set2: set of 'a'..'z';
+set3: set of pear..orange;
+집합은 현대 수학에 있어 기본적인 개념이며 수많은 알고리즘이 집합을 사용하여 정의된다.
+그러므로 이러한 알고리즘을 추가하는 것은 파스칼에 매우 알맞다고 볼 수 있다.
+집합형 연산은 효율적이기도 하다.
+if i in [5..10] then
+if (i&gt;4) and (i&lt;11) then
+형(type)은 선언을 통해 다른 형으로부터 정의될 수 있다:
+또한, 복잡한 형은 단순한 형으로 구성할 수 있다:
+a = Array [1..10] of Integer;
+파스칼은 포인터 사용을 지원한다:
+pointer_to_b: a;
+가변 codice_1가 자료형 codice_2 레코드의 포인터이다.
+포인터들은 선언 전에 사용할 수 있다.
+새로운 레코드를 만들어 값codice_3과 codice_4를 레코드 안의 필드 codice_5로 할당하려면, 다음과 같은 명령어를 사용하면 된다:
+new(pointer_to_b);
+pointer_to_b^.x := 10;
+pointer_to_b^.y := 'A';
+pointer_to_b^.z := nil;
+한정자를 보다 효과적으로 통제하기 위해서는 codice_6 문을 써서 다음과 같은 방식을 사용할 수도 있다.
+new(pointer_to_b);
+with pointer_to_b^ do
+파스칼은 구조 프로그래밍 언어이며, 제어 흐름을 goto 문 없이 표준화할 수 있다.
+while a &lt;&gt; b do writeln('Waiting');
+if a &gt; b then
+writeln('Condition met')
+writeln('Condition false');
+for i := 1 to 10 do writeln('Iteration: ', i:1);
+repeat a := a + 1 until a = 10;
+파스칼 구조는 절차와 함수로 짜여진다.
+program mine(output);
+var i : integer;
+procedure print(var j: integer);
+function next(k: integer): integer;
+writeln('The total is: ', j);
+while i &lt;= 10 do print(i)
+절차와 함수는 어느 깊이로든 놓일 수 있으며, 프로그램 구조는 논리 외부 블록이다.
