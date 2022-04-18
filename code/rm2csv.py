@@ -99,5 +99,11 @@ for context_name, relation_folder, contexts_folder in zip(context_name_list, rel
             object_entity.append(tmp_obj_entity)
             label.append(tmp_label)
 
+from collections import defaultdict
+x = defaultdict(int)
+for l in label:
+    x[l] += 1
+print(x)
+
 output = pd.DataFrame({'id': id, 'sentence': sentence, 'subject_entity': subject_entity, 'object_entity': object_entity, 'label': label})
 output.to_csv('./output.csv', index=False)
