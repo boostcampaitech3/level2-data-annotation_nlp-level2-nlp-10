@@ -7,14 +7,14 @@ import shutil
 import pandas as pd
 
 url = "https://tagtog.net/-login"
-file_url = '???' # Download All Documents 버튼 링크 주소
+file_url = 'https://www.tagtog.net/jujeongho/NLP/-downloads/dataset-as-anndoc' # Download All Documents 버튼 링크 주소
 o_file = 'abc.zip'
 if os.path.exists(o_file):
     os.remove(o_file)
 
 login_info = {
-    'loginid' : '???', # tagtog 로그인 이메일
-    'password' : '???', # 비밀번호
+    'loginid' : 'price_o@naver.com', # tagtog 로그인 이메일
+    'password' : 'jujeongho106601!', # 비밀번호
 }
 
 with requests.Session() as s:
@@ -29,7 +29,7 @@ if os.path.exists(folder_path):
     shutil.rmtree(folder_path)
 zip_.extractall(folder_path)
 
-folder_name = "./tagtog_relation_extraction/???/" # 자신의 프로젝트명으로 수정!
+folder_name = "./tagtog_relation_extraction/NLP/" # 자신의 프로젝트명으로 수정!
 context_name_list = os.listdir(folder_name + "ann.json/master/pool")
 relation_folder_paths = [folder_name + "ann.json/master/pool/"]
 contexts_folders_paths = [folder_name + "plain.html/pool/"]
@@ -98,6 +98,12 @@ for context_name, relation_folder, contexts_folder in zip(context_name_list, rel
             subject_entity.append(tmp_sub_entity)
             object_entity.append(tmp_obj_entity)
             label.append(tmp_label)
+
+from collections import defaultdict
+x = defaultdict(int)
+for l in label:
+    x[l] += 1
+print(x)
 
 output = pd.DataFrame({'id': id, 'sentence': sentence, 'subject_entity': subject_entity, 'object_entity': object_entity, 'label': label})
 output.to_csv('./output.csv', index=False)
