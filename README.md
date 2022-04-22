@@ -11,7 +11,16 @@
 |<img src='https://user-images.githubusercontent.com/73579424/164642575-4273ba4f-f291-4f44-b37b-856ecb8df450.png' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164642795-b5413071-8b14-458d-8d57-a2e32e72f7f9.png' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164642916-2ba2c870-9773-44c3-9acd-b3ac46d77d2a.png' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164643061-599b9409-dc21-4f7a-8c72-b5d5dbfe9fab.jpg' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164643280-b0981ca3-528a-4c68-9331-b8f7a1cbe414.jpg' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164643383-cf02b20e-07b7-4f50-bb79-e3d1cf5db084.png' height=80 width=80px></img>|
 |[Github](https://github.com/NHRWV)|[Github](https://github.com/wertat)|[Github](https://github.com/JEONSUN)|[Github](https://github.com/greenare)|[Github](https://github.com/jujeongho0)|[Github](https://github.com/timmyeos)|
 
-### Installing / 설치
+### Members' Role
+| 팀원 | 역할 | 
+| --- | --- |
+| 김남현(T3021) | Relation map/가이드라인 작성 & 어노테이션 작업 |
+| 민원식(T3079) | Relation map/가이드라인 작성 & 어노테이션 작업 |
+| 정기원(T3195) | Relation map/가이드라인 작성 & 어노테이션 작업 |
+| 주정호(T3211) | Relation map/가이드라인 작성 & 어노테이션 작업 & Fleiss’ Kappa 측정 & Fine-Tunning  |
+| 최지민(T3223) | Relation map/가이드라인 작성 & 어노테이션 작업 |
+
+## 🔨 Installation
 
 아래 사항들로 현 프로젝트에 관한 모듈들을 설치할 수 있습니다.
 
@@ -23,25 +32,41 @@ requests
 html
 zipfile
 shutil
-
+json
 ```
 
-## Running the tests / 테스트의 실행
+## ✍ Function Description
 
-어떻게 테스트가 이 시스템에서 돌아가는지에 대한 설명을 합니다
+`train.py`: "klue/roberta-large"을 바탕으로 LSTM layer를 추가하여 model을 생성하고 주어진 train dataset을 통해 train 진행
 
-### 테스트는 이런 식으로 동작합니다
+`inference.py`: "klue/roberta-large"을 바탕으로 LSTM layer를 추가하여 model을 생성하고 주어진 test dataset을 통해 inference 진행
 
-왜 이렇게 동작하는지, 설명합니다
+`load_data.py + 'df_edit.py'`: 주어진 dataset에서 원하는 항목을 분리하고 type-entity 등을 추가
 
-```
-예시
-```
+`tagtog2csv.py`: tagtog에서 진행한 annotation 작업물을 request를 통해 받아와서 KLUE 데이터셋의 양식으로 편집하여 저장
 
-### 테스트는 이런 식으로 작성하시면 됩니다
+`calculate_iaa.py + fleiss.py`: Fleiss Kappa를 계산
 
-```
-예시
+
+## 🏢 Structure
+
+```bash
+level1-image-classification-level1-recsys-09
+│
+├── README.md
+├── requirements.txt
+├── EDA
+│   ├── data_EDA.ipynb
+│   ├── image_EDA.ipynb
+│   └── torchvision_transforms.ipynb
+└── python
+    ├── train.py
+    ├── inference.py
+    ├── load_data.py
+    ├── df_edit.py
+    ├── tagtog2csv.py
+    ├── calculate_iaa.py
+    └── fleiss.py
 ```
 
 ## Deployment / 배포
