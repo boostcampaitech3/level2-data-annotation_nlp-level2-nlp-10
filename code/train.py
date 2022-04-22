@@ -139,9 +139,9 @@ def train():
 
   training_args = TrainingArguments(
     output_dir='./results',          # output directory
-    save_strategy='steps',
+    save_strategy='epoch',
     save_total_limit=1,              # number of total save model.
-    num_train_epochs=2,              # total number of training epochs
+    num_train_epochs=20,              # total number of training epochs
     learning_rate=3e-6,               # learning_rate
     per_device_train_batch_size=17,  # batch size per device during training
     per_device_eval_batch_size=17,   # batch size for evaluation
@@ -150,9 +150,9 @@ def train():
     label_smoothing_factor=0.1,
     logging_dir='./logs',            # directory for storing logs
     logging_strategy='steps',
-    eval_steps = 10,
-    logging_steps=50,              # log saving step.
-    evaluation_strategy='steps', # evaluation strategy to adopt during training
+    # eval_steps = 10,
+    logging_steps=90,              # log saving step.
+    evaluation_strategy='epoch', # evaluation strategy to adopt during training
                                 # `no`: No evaluation during training.
                                 # `steps`: Evaluate every `eval_steps`.
                                 # `epoch`: Evaluate every end of epoch.
