@@ -75,5 +75,5 @@ level1-image-classification-level1-recsys-09
     └── fleiss.py
 ```
 
-## 리포트
+## 📋 Report
 [NLP] 데이터 제작 대회 WrapUP 리포트 : [데이터 제작 대회_NLP_팀 리포트(10조).pdf](https://catnip-pelican-5b8.notion.site/_NLP_-10-9e4a94b82c114f7496ff429d79eafa21)
