@@ -76,7 +76,7 @@ level1-image-classification-level1-recsys-09
     └── fleiss.py
 ```
 
-## Relation
+## 📂 Relation
 
 |id	|class_name (ko)	|class_name (en)	|direction (sub, obj)	|description|
 |---|---|---|---|---|
