@@ -5,12 +5,11 @@
 - KLUE를 참고하여 총 10개의 relation으로 구분된 데이터셋 작성
 
 ## 👋 팀원 소개
-
-|                                                  [김남현](https://github.com/NHRWV)                                                   |                                                                          [민원식](https://github.com/wertat)                                                                           |                                                 [전태양](https://github.com/JEONSUN
-)                                                  |                                                                        [정기원](https://github.com/greenare)                                                                         |                                                                         [주정호](https://github.com/jujeongho0
-)                                                                         |[최지민](https://github.com/timmyeos)                                             
-| :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [![Avatar](https://avatars.githubusercontent.com/u/54979241?v=4)](https://github.com/NHRWV) | [![Avatar](https://avatars.githubusercontent.com/u/80184218?v=4)](https://github.com/wertat) | [![Avatar](https://avatars.githubusercontent.com/u/55140109?v=4)](https://github.com/JEONSUN) | [![Avatar](https://avatars.githubusercontent.com/u/73579424?v=4)]https://github.com/greenare) | [![Avatar](https://avatars.githubusercontent.com/u/62659407?v=4)](https://github.com/https://github.com/jujeongho0)| [![Avatar](https://avatars.githubusercontent.com/u/97524127?v=4)](https://github.com/timmyeos) |
+### Members
+김남현|민원식|전태양|정기원|주정호|최지민|
+:-:|:-:|:-:|:-:|:-:
+<img src='https://user-images.githubusercontent.com/73579424/164642575-4273ba4f-f291-4f44-b37b-856ecb8df450.png' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164642795-b5413071-8b14-458d-8d57-a2e32e72f7f9.png' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164642916-2ba2c870-9773-44c3-9acd-b3ac46d77d2a.png' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164643061-599b9409-dc21-4f7a-8c72-b5d5dbfe9fab.jpg' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164643280-b0981ca3-528a-4c68-9331-b8f7a1cbe414.jpg' height=80 width=80px></img>|<img src='https://user-images.githubusercontent.com/73579424/164643383-cf02b20e-07b7-4f50-bb79-e3d1cf5db084.png' height=80 width=80px></img>
+[Github](https://github.com/NHRWV)|[Github](https://github.com/wertat)|[Github](https://github.com/JEONSUN)|[Github](https://github.com/greenare)|[Github](https://github.com/jujeongho0)|[Github](https://github.com/timmyeos)
 
 ### Installing / 설치
 
