@@ -94,6 +94,7 @@ level1-image-classification-level1-recsys-09
 
 
 ## 📋 Report
-- [NLP] 데이터 제작 대회 WrapUP 리포트 : [데이터 제작 대회_NLP_팀 리포트(10조).pdf](https://catnip-pelican-5b8.notion.site/_NLP_-10-9e4a94b82c114f7496ff429d79eafa21)
+- [NLP] 데이터 제작 대회 WrapUP 리포트(노션) : [데이터 제작 대회_NLP_팀 리포트(10조).pdf](https://catnip-pelican-5b8.notion.site/_NLP_-10-9e4a94b82c114f7496ff429d79eafa21)
+- [NLP] 데이터 제작 대회 WrapUP 리포트(PDF 파일 다운로드) : [NLP_데이터제작_Wrap_up_Report(10조).pdf](https://github.com/boostcampaitech3/level2-data-annotation_nlp-level2-nlp-10/files/8541329/NLP_._Wrap_up_Report.10.pdf)
 - 최종제출물(가이드라인, relation map, 데이터셋) : [10조(핫식스)-컴퓨터언어-20220422T080136Z-001.zip](https://github.com/boostcampaitech3/level2-data-annotation_nlp-level2-nlp-10/files/8541129/10.-.-20220422T080136Z-001.zip)
 
