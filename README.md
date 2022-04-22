@@ -1,4 +1,8 @@
-# Project Title / 프로젝트 이름
+# level2-data-annotation_nlp-level2-nlp-10
+
+## ❗ 주제 설명
+- '컴퓨터언어' 주제로 데이터셋 만들기
+- KLUE를 참고하여 총 10개의 relation으로 구분된 데이터셋 작성
 
 **[뱃지나 프로젝트에 관한 이미지들이 이 위치에 들어가면 좋습니다]**  
 One Paragraph of project description goes here / 프로젝트의 전반적인 내용에 대한 요약을 여기에 적습니다
@@ -20,7 +24,14 @@ One Paragraph of project description goes here / 프로젝트의 전반적인 �
 아래 사항들로 현 프로젝트에 관한 모듈들을 설치할 수 있습니다.
 
 ```
-예시
+pandas==1.1.5
+scikit-learn~=0.24.1
+transformers==4.10.0
+requests
+html
+zipfile
+shutil
+
 ```
 
 ## Running the tests / 테스트의 실행
