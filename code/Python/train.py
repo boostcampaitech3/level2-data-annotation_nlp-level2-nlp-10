@@ -119,11 +119,11 @@ def train():
   added_token_num = tokenizer.add_special_tokens({"additional_special_tokens":["[COM]", "[DAT]", "[PER]", "[ORG]", "[POH]"]})
   
   # load dataset
-  train_dataset = load_data("./train.csv")
+  train_dataset = load_data("../train.csv")
   train_label = label_to_num(train_dataset['label'].values)
   tokenized_train = tokenized_dataset(train_dataset, tokenizer)
   
-  # eval_dataset = load_test_data("./test.csv")
+  # eval_dataset = load_test_data("../test.csv")
   # eval_label = label_to_num(eval_dataset['answer'].values)
   # tokenized_eval = tokenized_dataset(eval_dataset, tokenizer)
   
@@ -165,7 +165,7 @@ def train():
     model=model,                         # the instantiated 🤗 Transformers model to be trained
     args=training_args,                  # training arguments, defined above
     train_dataset=RE_train_dataset,         # training dataset
-    eval_dataset=RE_train_dataset,
+    eval_dataset=RE_eval_dataset,
     compute_metrics=compute_metrics
   )
 
