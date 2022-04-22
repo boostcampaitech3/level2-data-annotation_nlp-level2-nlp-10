@@ -36,6 +36,7 @@ json
 ```
 
 ## ✍ Function Description
+`EDA+Data Viz.ipynb`: 데이터 EDA 및 시각화
 
 `train.py`: "klue/roberta-large"을 바탕으로 LSTM layer를 추가하여 model을 생성하고 주어진 train dataset을 통해 train 진행
 
@@ -55,10 +56,15 @@ level1-image-classification-level1-recsys-09
 │
 ├── README.md
 ├── requirements.txt
-├── EDA
-│   ├── data_EDA.ipynb
-│   ├── image_EDA.ipynb
-│   └── torchvision_transforms.ipynb
+├── iaa.csv
+├── train.csv
+├── test.csv
+│
+│
+├── EDA+Data Viz
+│   └── EDA+Data Viz.ipynb
+│   
+│   
 └── python
     ├── train.py
     ├── inference.py
@@ -69,25 +75,5 @@ level1-image-classification-level1-recsys-09
     └── fleiss.py
 ```
 
-## Deployment / 배포
-
-Add additional notes about how to deploy this on a live system / 라이브 시스템을 배포하는 방법
-
-## Built With / 누구랑 만들었나요?
-
-* [이름](링크) - 무엇 무엇을 했어요
-* [Name](Link) - Create README.md
-
-## Contributiong / 기여
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us. / [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) 를 읽고 이에 맞추어 pull request 를 해주세요.
-
-## License / 라이센스
-
-This project is licensed under the MIT License - see the [LICENSE.md](https://gist.github.com/PurpleBooth/LICENSE.md) file for details / 이 프로젝트는 MIT 라이센스로 라이센스가 부여되어 있습니다. 자세한 내용은 LICENSE.md 파일을 참고하세요.
-
-## Acknowledgments / 감사의 말
-
-* Hat tip to anyone whose code was used / 코드를 사용한 모든 사용자들에게 팁
-* Inspiration / 영감
-* etc / 기타
+## 리포트
+[NLP] 데이터 제작 대회 WrapUP 리포트 : [데이터 제작 대회_NLP_팀 리포트(10조).pdf](https://catnip-pelican-5b8.notion.site/_NLP_-10-9e4a94b82c114f7496ff429d79eafa21)
