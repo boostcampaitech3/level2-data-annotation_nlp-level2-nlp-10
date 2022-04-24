@@ -17,6 +17,7 @@
 | --- | --- |
 | 김남현(T3021) | Relation map / 가이드라인 작성 & 어노테이션 작업 |
 | 민원식(T3079) | Relation map / 가이드라인 작성 & 어노테이션 작업 |
+| 전태양(T3194) | Relation map / 가이드라인 작성 & 어노테이션 작업 |
 | 정기원(T3195) | Relation map / 가이드라인 작성 & 어노테이션 작업 |
 | 주정호(T3211) | Relation map / 어노테이션 작업 & Fleiss’ Kappa 측정 & Fine-Tunning  |
 | 최지민(T3223) | Relation map / 가이드라인 작성 & 어노테이션 작업 & 제작된 데이터 EDA |
