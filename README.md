@@ -54,7 +54,7 @@ json
 ## 🏢 Structure
 
 ```bash
-level1-image-classification-level1-recsys-09
+level2-data-annotation_nlp-level2-nlp-10
 │
 ├── README.md
 ├── requirements.txt
